@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Goel | Sports</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!--  the video -->
+
+    <div
+      class="d-flex h-100 text-center text-bg-dark"
+      cz-shortcut-listen="true"
+    >
+      <div class="container-fluid p-0 m-0">
+        <div class="row no-gutters">
+          <div class="col m-0 p-0">
+            <video id="video" class="w-100 vh-80" autoplay muted loop>
+              <source src="clgsports/G1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          setTimeout(function () {
+            $("#video").hide();
+          }, 2650); // 8000 milliseconds = 8 seconds
+        });
+      </script>
+
+      <script
+        src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+      <!-- the video end -->
+
+
+
+    <!-- upcoming events -->
+    <div id="popup" class="modal fade">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title">Upcoming Events</h5>
+              </div>
+              <div class="modal-body">
+                  <p>Here are our exciting upcoming events!</p>
+                  <!-- Image link -->
+                  <a href="images/rthm.jpeg" target="_blank">
+                      <img src="images/rthm.jpeg" class="img-fluid" alt="Upcoming Event Image">
+                  </a>
+                  <a href="#target-section" class="btn btn-primary" id="goto-section">Go to Events</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+      // Function to show the popup after 30 seconds
+      function showPopup() {
+          $('#popup').modal('show');
+      }
+      //hide after direct
+      $('#goto-section').on('click', function() {
+            closePopup();
+        });
+      // Set timeout to show the popup after 30 seconds
+      setTimeout(showPopup, 5000); // 30 seconds = 30000 milliseconds
+
+      
+  </script>
+<!-- script close -->
+  <!-- popup over -->
+
+
+
+    <!-- header -->
+    <div class="container-fluid pt-1" style="background-color: #6b8e23">
+      <div class="container">
+        <div class="row">
+          <!-- nav image -->
+          <div class="col-sm-4 align-items-center text-center">
+            <img
+              src="/images/logo.png"
+              class="rounded offset-lg-8"
+              alt="..."
+              style="height: 140px; width: 140px"
+            />
+          </div>
+          <!-- nav content -->
+          <div class="col-sm-7">
+            <!-- clg name -->
+            <div class="row">
+              <div class="col-sm-10">
+                <h1
+                  class="d-xs-none d-sm-block d-md-none text-white text-center"
+                  style="font-size: 30px"
+                >
+                  GOEL SPORTS CLUB
+                </h1>
+                <h1
+                  class="fw-bold m-0 d-sm-none d-md-block d-lg-block d-none"
+                  style="color: white; font-size: 50px"
+                >
+                  GOEL SPORTS CLUB
+                </h1>
+                <ul
+                  class="nav d-flex justify-content-center mt-2 d-sm-flex justify-content-sm-start"
+                >
+                  <li
+                    class="nav-item border border-1 border-sm-none rounded-start px-0 px-sm-3"
+                  >
+                    <a
+                      class="nav-link active text-white"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item border border-1 px-0 px-sm-3">
+                    <a class="nav-link text-white" href="#">About</a>
+                  </li>
+                  <li class="nav-item border border-1 px-0 px-sm-3">
+                    <a class="nav-link text-white" href="#">Events</a>
+                  </li>
+                  <li class="nav-item border border-1 px-0 px-sm-3 rounded-end">
+                    <a class="nav-link text-white" href="#">Gallery</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- navbar links -->
+            <div class="row">
+              <div class="col-sm-8 mb-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- body -->
+    <div
+      class="container-fluid"
+      style="
+        background-image: url('https://content.jdmagicbox.com/comp/def_content/sports-ground/sports-ground1-sports-ground-1-7d9x4.jpg');
+      "
+    >
+      <div class="container">
+        <!-- first row -->
+        <div class="row mx-sm-4 py-4" style="background-color: aliceblue">
+          <div class="col-sm-12">
+            <!-- carousel -->
+            <div class="row px-3">
+              <div class="col-sm-12">
+                <div
+                  id="carouselExampleAutoplaying"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="clgsports/maiin1.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="clgsports/main2.jpg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="clgsports/main4.jpeg"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr class="py-4 my-4" />
+            <!-- cards -->
+            <div class="row">
+              <div class="col-sm-12">
+                <h1
+                  class="text-center py-4"
+                  style="
+                    color: #000000;
+                    background-color: rgba(196, 255, 189, 0.508);
+                  "
+                >
+                  Our Backbone
+                </h1>
+                <div class="album py-5 bg-body-tertiary">
+                  <div class="container">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/cm.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <bold class="text-center">
+                              <strong>CHAIRMAN'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                              Our aim is to train the students efficiently &
+                              effectively across professional boundaries so that
+                              they encourage as leaders & innovators in their
+                              chosen professions.I welcome you to be part of our
+                              journey to acquire knowledge that provides
+                              benefits to both self & mankind….
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/director.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <bold class="text-center">
+                            <strong>DIRECTOR'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                              The Institute Is A Good Blend Of Young And
+                              Experienced Academicians And Dedicated Supporting
+                              Staffs Who Work Hard To Develop Students Not Only
+                              Technically But Also Develop Their Intrinsic
+                              Skills For Overall Personality Development.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/Dean1.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <bold class="text-center">
+                              <strong>DEAN'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                              Our sole mission is to help students to become
+                              “competent technocrats and business managers who
+                              are also principled value-based leaders”. We have
+                              succeeded in our mission by embracing a 100%
+                              interactive educational philosophy, which is
+                              practised, organisation-wide-by students and
+                              faculty.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/S.jpeg"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <strong>HOD'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                            Goel Institute of Technology and Management is on a fascinating path of growth & development.
+                            It has sports committee for the overall development of the students.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/c.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <strong>SPORTS HEAD'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                            The sports committee in the GITM is a centre of physical development of the pupils.
+                            The aim of the committee is to provide a platform for students to explore their talents & skills.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card shadow-sm">
+                          <img
+                            src="images/m.png"
+                            class="card-img-top"
+                            alt="..."
+                          />
+                          <div class="card-body">
+                            <strong>DEPARTMENT HEAD'S MESSAGE</strong></bold
+                            >
+                            <p class="card-text">
+                            GITM sports committee includes developing physical fitness , understanding the importance of sports & developing leadership qualities among students which will help them in their future endeavours.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--offline Events events -->
+            <div class="row">
+              <div class="col-sm-12 justify-content-center">
+                <h2
+                  class="text-center text-dark p-2 m-4"
+                  style="background-color: rgb(205, 205, 57)"
+                >
+                  Offlines Games
+                </h2>
+
+                <!-- events cards -->
+                <!-- first -->
+                <div class="col-md-8 mt-3 mx-auto">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center"
+                    >
+                      <div class="card mb-3" style="max-width: 680px">
+                        <div class="row g-0">
+                          <div class="col-md-4 P-5">
+                            <img
+                              src="/clgsports/cricket.jpg"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                              style="height: 200px; width: 300px"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <strong>Inter-Departmental Cricket Cup</strong>
+                              </h5>
+                              <p class="card-text">
+                                The sports committee organised cricket match in the month of December & January.This match was won by MBA department & runner up was Civil department.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="col-md-8 mt-3 mx-auto">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center"
+                    >
+                      <div class="card mb-3" style="max-width: 680px">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="/clgsports/race.jpg"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                            />
+                          </div>
+                          <div id="target-section" class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Race (100m/200m)</h5>
+                              <p class="card-text">
+                                Race Competition The sports committee of GITM
+                                organised race between different departments.
+                                The first position was won by IT branch & the
+                                runner up branch was CS.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- third -->
+                <div class="col-md-8 mt-3 mx-auto">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center"
+                    >
+                      <div class="card mb-3" style="max-width: 680px">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="/clgsports/tugofwar.jpg"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Tug of War</h5>
+                              <p class="card-text">
+                                A friendly tug of war was held in GITM campus.
+                                It was held in Rhythm Divine fest . Large number
+                                of students participated in the compitition.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- online events -->
+            <div class="row">
+              <div class="col-sm-12 justify-content-center">
+                <h2
+                  class="text-center text-dark p-2 m-4"
+                  style="background-color: rgb(205, 205, 57)"
+                >
+                  Online Games
+                </h2>
+
+                <!-- events cards -->
+                <!-- first -->
+                <div class="col-md-8 mt-3 mx-auto">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center"
+                    >
+                      <div class="card mb-3" style="max-width: 680px">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="/clgsports/ONgame1.jpg"
+                              class="img-fluid rounded-start"
+                              alt="..."
+                              style="height: 200px; width: 300px"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <strong>Online Gaming Battle</strong>
+                              </h5>
+                              <p class="card-text">
+                                An inter-departmental online gaming battle was
+                                held in college. It was held for the students
+                                who were keen in BGMI / PUBG.
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- second -->
+                <div class="col-md-8 mt-3 mx-auto">
+                  <div class="card">
+                    <div
+                      class="card-body d-flex align-items-center justify-content-center"
+                    >
+                      <div class="card mb-3" style="max-width: 680px">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img
+                              src="/clgsports/pubg.jpg "
+                              class="img-fluid rounded-start"
+                              alt="..."
+                              style="height: 200px; width: 300px"
+                            />
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">
+                                <strong>Goel Esports League </strong>
+                              </h5>
+                              <p class="card-text">
+                                Receiving immense participation in previous
+                                online gaming battle , the sports committee of
+                                GITM organised an ESports league for the
+                                students. It includes various egames such as
+                                Asphalt,PUBG,BGMI...etc
+                              </p>
+                              <p class="card-text">
+                                <small class="text-body-secondary"
+                                  >Last updated 3 mins ago</small
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <footer class="row row-cols-4 py-5 border-top">
+        <div class="col d-sm-flex">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 link-dark text-decoration-none"
+          >
+            <svg class="bi me-2" width="40" height="32">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img
+                src="/images/logo.png"
+                alt="GITM SPORTS"
+                class="img-fluid vw-100"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="col d-flex align-self-center">
+          <p class="text-muted">© 2025 @prab</p>
+        </div>
+
+        <div class="col p-sm-1">
+          <h5><strong>Quick Links</strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Photos</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Videos</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About Club</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h5><strong>Contacts</strong></h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Feedback</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Reach us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Suggest us</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">We'd love to hear</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
