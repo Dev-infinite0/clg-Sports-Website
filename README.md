@@ -43,4 +43,4 @@ Find contact details for coaches, staff, and team representatives.
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/college-sports-website.git
+   git clone https://github.com/dev-infinite0/college-sports-website.git
